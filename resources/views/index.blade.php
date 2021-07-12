@@ -185,7 +185,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6">
-               
+
 <div class="counter-item">
     <h2 class="counter" data-count="220"></h2>
     <h5>Happy Clients</h5>
@@ -193,14 +193,14 @@
 </div>
 </div>
 <div class="col-lg-3 col-md-6">
-  
+
     <div class="counter-item">
         <h2 class="counter" data-count="700">250</h2>
         <h5>Projects Done</h5>
     </div>
 </div>
 <div class="col-lg-3 col-md-6">
-   
+
     <div class="counter-item">
         <h2 class="counter" data-count="1100">150</h2>
         <h5>Awards Won</h5>
@@ -208,7 +208,7 @@
     </div>
 </div>
 <div class="col-lg-3 col-md-6">
-   
+
     <div class="counter-item ">
         <h2 class="counter" data-count="160">1500</h2>
         <h5>Cups Tea</h5>
@@ -236,8 +236,8 @@
                         @foreach ($types as $type)
                         <li data-filter=".{{$type->id}}">{{$type->name}}</li>
                         @endforeach
-                        
-                    
+
+
                     </ul>
                 </div>
             </div>
@@ -264,9 +264,9 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
             @endforeach
-            
+
 
             <!--Portfolio Item-->
             {{-- <div class="col-lg-4 col-md-4 item design">
@@ -582,7 +582,7 @@
         <div class="row">
 
             <div class="col-md-4">
-              
+
 <div class="post-slide">
     <div class="post-img">
         <a href="blog-details.html"><img src="assets/images/blog/60.jpg" alt=""></a>
@@ -606,7 +606,7 @@
 </div>
 </div>
 <div class="col-md-4">
-   
+
     <div class="post-slide">
         <div class="post-img">
             <a href="blog-details.html"><img src="assets/images/blog/50.jpg" alt=""></a>
@@ -630,7 +630,7 @@
     </div>
 </div>
 <div class="col-md-4">
-    
+
     <div class="post-slide">
         <div class="post-img">
             <a href="blog-details.html"><img src="assets/images/blog/30.jpg" alt=""></a>
@@ -732,4 +732,3 @@
 <!--Contact Section End-->
 @endsection
 
-    

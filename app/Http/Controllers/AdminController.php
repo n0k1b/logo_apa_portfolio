@@ -25,7 +25,7 @@ class AdminController extends Controller
         $project->completed_at = $req->input('completed_at');
         //dd($req);
         $img_name = time() . '.' . $req->file('image')->getClientOriginalExtension();
-        $req->file('image')->move(public_path().'/assets/uploads/projects', $img_name);
+        $req->file('image')->move(public_path('../assets/uploads/projects') , $img_name);
         $project->image = $img_name;
         $project->type_id = (int)$req->input('type');
 
@@ -44,7 +44,7 @@ class AdminController extends Controller
         return view('admin.login');
     }
     function login(Request $req)
-    {   
+    {
         $admin = Admin::where('email', $req->input('email'))->first();
         //dd($admin);
         if($admin === null) {
@@ -83,10 +83,12 @@ class AdminController extends Controller
         //dd($req);
         if($req->file('image') !== null) {
             $img_name = time() . '.' . $req->file('image')->getClientOriginalExtension();
-            $req->file('image')->move(public_path().'/assets/uploads/projects', $img_name);
+            $req->file('image')
+            ->move(public_path('../assets/uploads/projects') , $img_name);
+
             $project->image = $img_name;
         }
-        
+
         $project->type_id = (int)$req->input('type');
 
         $project->save();

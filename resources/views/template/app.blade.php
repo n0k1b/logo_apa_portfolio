@@ -35,7 +35,7 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <!--Site Main Style css-->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css') }}/style.css?{{ time() }}">
 
 </head>
 
@@ -54,7 +54,7 @@
         <div class="container">
             <!-- LOGO -->
             <a class="navbar-brand logo" href="{{ route('index') }}">
-                    Taso
+                    <img src="assets/images/background/logoapapng.png" class="logo_image">
                 </a>
 
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@
                             <a href="{{ route('logout') }}" class="nav-link">Logout</a>
                         </li>
                     @endif
-                    
+
                 </ul>
             </div>
         </div>
@@ -99,16 +99,16 @@
     <section id="Particle-ground" class="banner" style="" data-stellar-background-ratio=".7" data-scroll-index="0">
         <div class="container">
             <!--Banner Content-->
-    
+
             <div class="banner-div">
                 <h1>HI! I'M <span>TASNIYA</span></h1>
                 <p class="cd-headline clip is-full-width">
                     <span>Professional In</span>
                     <span class="cd-words-wrapper">
                                     <b class="is-visible">Graphics Designing</b>
-                                    <b>Website Designing.</b> 
+                                    <b>Website Designing.</b>
                                     <b>Website Devloping.</b>
-                                    
+
                                     <b>WordPress.</b>
                                 </span>
                 </p>
